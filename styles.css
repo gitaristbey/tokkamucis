@@ -1,0 +1,120 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    background-color: #1c1c1c;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #000;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    color: #f0c040;
+}
+
+.hero {
+    height: 80vh;
+    background: url('background-image.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 20px;
+    color: #f0c040;
+}
+
+.section {
+    padding: 40px;
+    text-align: center;
+}
+
+.song-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.song-item {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    width: calc(50% - 40px); /* 2 şarkı yan yana için genişlik ayarla */
+}
+
+@media (max-width: 768px) {
+    .song-item {
+        width: 100%; /* Küçük ekranlarda tek sütun */
+    }
+}
+
+
+footer {
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #aaa;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-links img {
+    width: 120px;
+    height: 80px;
+    transition: transform 0.3s ease;
+}
+
+.social-links img:hover {
+    transform: scale(1.2);
+}
